@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--StoryBoard-->
+        <scene sceneID="ofu-b0-4nD">
+            <objects>
+                <viewController storyboardIdentifier="StoryBoardListVC" title="StoryBoard" id="BTc-mm-2sC" customClass="StoryBoardListVC" customModule="AutoLayOutPrac" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="P6U-fW-RxO">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="KlI-hT-wcd">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="StoryboardCell" rowHeight="150" id="TBb-sM-pne" customClass="StoryboardCell" customModule="AutoLayOutPrac" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="150"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TBb-sM-pne" id="kyk-oh-rUN">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="150"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qwR-xY-tO4">
+                                                    <rect key="frame" x="10" y="11" width="373" height="24"/>
+                                                    <mutableString key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae felis ac odio iaculis fermentum sed congue orci. Praesent ullamcorper odio hendrerit leo scelerisque sollicitudin. Praesent vehicula mauris et maximus ullamcorper. Donec pretium ultricies bibendum. Proin dapibus ipsum velit, nec pulvinar risus scelerisque eu. In enim metus, gravida ac neque sit amet, consectetur iaculis magna. Proin pulvinar posuere ligula, posuere lobortis magna pharetra nec. In pharetra, neque in feugiat feugiat, est tellus tincidunt risus, sit amet porta enim turpis ac urna. Etiam accumsan sit amet nulla eget semper. Curabitur eu dapibus lectus, sit amet mollis nulla. Mauris et nunc non lacus malesuada dictum. Nullam ut nisi facilisis, posuere libero in, interdum odio. Cras facilisis suscipit dictum. Vivamus ullamcorper eu leo pellentesque venenatis.</mutableString>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Co4-FW-xFB">
+                                                    <rect key="frame" x="10" y="45" width="373" height="95"/>
+                                                    <mutableString key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae felis ac odio iaculis fermentum sed congue orci. Praesent ullamcorper odio hendrerit leo scelerisque sollicitudin. Praesent vehicula mauris et maximus ullamcorper. Donec pretium ultricies bibendum. Proin dapibus ipsum velit, nec pulvinar risus scelerisque eu. In enim metus, gravida ac neque sit amet, consectetur iaculis magna. Proin pulvinar posuere ligula, posuere lobortis magna pharetra nec. In pharetra, neque in feugiat feugiat, est tellus tincidunt risus, sit amet porta enim turpis ac urna. Etiam accumsan sit amet nulla eget semper. Curabitur eu dapibus lectus, sit amet mollis nulla. Mauris et nunc non lacus malesuada dictum. Nullam ut nisi facilisis, posuere libero in, interdum odio. Cras facilisis suscipit dictum. Vivamus ullamcorper eu leo pellentesque venenatis.</mutableString>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="Co4-FW-xFB" secondAttribute="trailing" constant="10" id="4cY-v8-AXd"/>
+                                                <constraint firstAttribute="trailing" secondItem="qwR-xY-tO4" secondAttribute="trailing" constant="10" id="5dg-Qs-hdd"/>
+                                                <constraint firstItem="qwR-xY-tO4" firstAttribute="leading" secondItem="kyk-oh-rUN" secondAttribute="leading" constant="10" id="KtM-ms-4nb"/>
+                                                <constraint firstItem="Co4-FW-xFB" firstAttribute="leading" secondItem="qwR-xY-tO4" secondAttribute="leading" id="N1D-yC-GY2"/>
+                                                <constraint firstItem="qwR-xY-tO4" firstAttribute="top" secondItem="kyk-oh-rUN" secondAttribute="top" constant="11" id="WGw-rB-vxy"/>
+                                                <constraint firstAttribute="bottom" secondItem="Co4-FW-xFB" secondAttribute="bottom" constant="10" id="a4a-KN-C2P"/>
+                                                <constraint firstItem="Co4-FW-xFB" firstAttribute="top" secondItem="qwR-xY-tO4" secondAttribute="bottom" constant="10" id="cz8-KS-FkJ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="bodyLabel" destination="Co4-FW-xFB" id="Faw-pk-ZZj"/>
+                                            <outlet property="titleLabel" destination="qwR-xY-tO4" id="xfA-tc-ojQ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="KY3-99-wgN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KY3-99-wgN" firstAttribute="bottom" secondItem="KlI-hT-wcd" secondAttribute="bottom" id="PLk-kd-WEJ"/>
+                            <constraint firstItem="KlI-hT-wcd" firstAttribute="top" secondItem="KY3-99-wgN" secondAttribute="top" id="QNj-U4-fKV"/>
+                            <constraint firstItem="KlI-hT-wcd" firstAttribute="leading" secondItem="KY3-99-wgN" secondAttribute="leading" id="cmo-5K-Hg6"/>
+                            <constraint firstItem="KY3-99-wgN" firstAttribute="trailing" secondItem="KlI-hT-wcd" secondAttribute="trailing" id="d1u-X5-2vx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="StoryBoard" id="T7W-s0-VCZ"/>
+                    <connections>
+                        <outlet property="myTableView" destination="KlI-hT-wcd" id="Wb8-oW-zkE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dam-y1-DzX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="887.78625954198469" y="-146.47887323943664"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

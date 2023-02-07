@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6Wk-3f-TmT">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Default-->
+        <scene sceneID="ylR-XB-gHX">
+            <objects>
+                <viewController id="fZt-KR-bra" customClass="MainVC" customModule="AutoLayOutPrac" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nc9-Gy-KtI">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qdQ-6p-z9C">
+                                <rect key="frame" x="141.66666666666666" y="377" width="109.66666666666666" height="167.33333333333337"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ega-sL-u31">
+                                        <rect key="frame" x="0.0" y="0.0" width="109.66666666666667" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Default"/>
+                                        <connections>
+                                            <segue destination="V3k-xG-nbZ" kind="show" id="tfv-Lf-KCf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l3j-Z3-BPZ">
+                                        <rect key="frame" x="0.0" y="44.333333333333314" width="109.66666666666667" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="StoryBoard"/>
+                                        <connections>
+                                            <segue destination="ni2-pH-jtM" kind="show" id="TQP-xu-GHa"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B6v-Vm-m5F">
+                                        <rect key="frame" x="0.0" y="88.666666666666686" width="109.66666666666667" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Nib"/>
+                                        <connections>
+                                            <segue destination="1Aw-sA-xOg" kind="show" id="ugR-6M-XEv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4QQ-I3-OAY">
+                                        <rect key="frame" x="0.0" y="133" width="109.66666666666667" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Code"/>
+                                        <connections>
+                                            <segue destination="3sb-Qx-dgg" kind="show" id="kTp-YL-wHN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1aN-7f-7fw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qdQ-6p-z9C" firstAttribute="centerY" secondItem="1aN-7f-7fw" secondAttribute="centerY" id="szE-ft-RWp"/>
+                            <constraint firstItem="qdQ-6p-z9C" firstAttribute="centerX" secondItem="1aN-7f-7fw" secondAttribute="centerX" id="tCH-gM-bBT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Default" id="KCE-tr-1Gd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="egZ-Xw-T1a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-40.458015267175568" y="-27.464788732394368"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="c9F-AU-JSI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6Wk-3f-TmT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Of0-sv-G9B">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="fZt-KR-bra" kind="relationship" relationship="rootViewController" id="gS6-ug-g2N"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X4x-WT-Aiw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-967.17557251908397" y="-27.464788732394368"/>
+        </scene>
+        <!--DefaultListVC-->
+        <scene sceneID="rw2-Fd-VkS">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="DefaultListVC" storyboardName="DefaultList" referencedIdentifier="DefaultListVC" id="V3k-xG-nbZ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="L4r-VX-2BB"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GRr-3z-Gp2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="888" y="-115"/>
+        </scene>
+        <!--StoryBoardListVC-->
+        <scene sceneID="NmI-bZ-H3K">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="StoryBoardListVC" storyboardName="StoryBoardList" referencedIdentifier="StoryBoardListVC" id="ni2-pH-jtM" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Ldj-WN-zXJ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CTr-Vd-FAR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="888" y="-87"/>
+        </scene>
+        <!--NibListVC-->
+        <scene sceneID="Q5f-Xy-oM0">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="NibListVC" storyboardName="NibList" referencedIdentifier="NibListVC" id="1Aw-sA-xOg" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="MU0-V2-DfO"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="whS-yp-DDI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="888" y="-56"/>
+        </scene>
+        <!--CodeListVC-->
+        <scene sceneID="YUe-uk-EEz">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="CodeListVC" storyboardName="CodeList" referencedIdentifier="CodeListVC" id="3sb-Qx-dgg" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="6pF-sO-Gqt"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H0C-aF-kYX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="888" y="-27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
