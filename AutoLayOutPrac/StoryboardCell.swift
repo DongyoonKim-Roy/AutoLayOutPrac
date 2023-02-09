@@ -13,7 +13,7 @@ class StoryboardCell: UITableViewCell{
     @IBOutlet weak var bodyLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
     
-    override class func awakeFromNib() {
+    override func awakeFromNib() {
         super.awakeFromNib()
         print(#fileID, #function, #line, "- <#comment#>")
     }

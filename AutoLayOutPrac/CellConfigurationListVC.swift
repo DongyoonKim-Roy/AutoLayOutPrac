@@ -1,0 +1,72 @@
+//
+//  CellConfigurationListVC.swift
+//  AutoLayOutPrac
+//
+//  Created by Roy's Saxy MacBook on 2/8/23.
+//
+
+import Foundation
+import UIKit
+
+class CellConfigurationListVC: UIViewController{
+    @IBOutlet weak var myTableView: UITableView!
+    var dummyDataList : [DummySection] = DummySection.getDummy()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        print(#fileID, #function, #line, "- <#comment#>")
+        
+        configTableView()
+    }
+    fileprivate func configTableView(){
+        self.myTableView.register(CellConfigTableViewCell.self, forCellReuseIdentifier: "CellConfigTableViewCell")
+        
+        self.myTableView.dataSource = self
+        self.myTableView.delegate = self
+    }
+}
+
+
+extension CellConfigurationListVC : UITableViewDataSource{
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "Header " + dummyDataList[section].title
+    }
+    
+    func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
+        return "Footer " + dummyDataList[section].title
+    }
+    
+    //How many sections
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return dummyDataList.count
+    }
+    //how many sectioncs in rows
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return dummyDataList[section].rows.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "CellConfigTableViewCell", for: indexPath) as? CellConfigTableViewCell else{
+            return UITableViewCell()
+        }
+        
+        let sectionData : DummySection = dummyDataList[indexPath.section]
+        let cellData : DummyData = sectionData.rows[indexPath.row]
+        
+        cell.title = cellData.title
+        cell.body = cellData.body
+        
+//        cell.titleLabel.text = cellData.title
+//        cell.bodyLabel.text = cellData.body
+//
+        return cell
+    }
+}
+
+extension CellConfigurationListVC : UITableViewDelegate{
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(#fileID, #function, #line, "- <#comment#>")
+    }
+}
