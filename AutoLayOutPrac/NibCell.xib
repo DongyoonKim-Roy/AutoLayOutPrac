@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NibCell" rowHeight="135" id="EPW-YW-Zhp" customClass="NibCell" customModule="AutoLayOutPrac" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="468" height="135"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EPW-YW-Zhp" id="rUo-3K-fkc">
+                <rect key="frame" x="0.0" y="0.0" width="468" height="135"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0uS-Zp-6gb">
+                        <rect key="frame" x="10" y="10" width="448" height="24"/>
+                        <mutableString key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae felis ac odio iaculis fermentum sed congue orci. Praesent ullamcorper odio hendrerit leo scelerisque sollicitudin. Praesent vehicula mauris et maximus ullamcorper. Donec pretium ultricies bibendum. Proin dapibus ipsum velit, nec pulvinar risus scelerisque eu. In enim metus, gravida ac neque sit amet, consectetur iaculis magna. Proin pulvinar posuere ligula, posuere lobortis magna pharetra nec. In pharetra, neque in feugiat feugiat, est tellus tincidunt risus, sit amet porta enim turpis ac urna. Etiam accumsan sit amet nulla eget semper. Curabitur eu dapibus lectus, sit amet mollis nulla. Mauris et nunc non lacus malesuada dictum. Nullam ut nisi facilisis, posuere libero in, interdum odio. Cras facilisis suscipit dictum. Vivamus ullamcorper eu leo pellentesque venenatis.</mutableString>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Crf-3G-AiG">
+                        <rect key="frame" x="10" y="44" width="448" height="81"/>
+                        <mutableString key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae felis ac odio iaculis fermentum sed congue orci. Praesent ullamcorper odio hendrerit leo scelerisque sollicitudin. Praesent vehicula mauris et maximus ullamcorper. Donec pretium ultricies bibendum. Proin dapibus ipsum velit, nec pulvinar risus scelerisque eu. In enim metus, gravida ac neque sit amet, consectetur iaculis magna. Proin pulvinar posuere ligula, posuere lobortis magna pharetra nec. In pharetra, neque in feugiat feugiat, est tellus tincidunt risus, sit amet porta enim turpis ac urna. Etiam accumsan sit amet nulla eget semper. Curabitur eu dapibus lectus, sit amet mollis nulla. Mauris et nunc non lacus malesuada dictum. Nullam ut nisi facilisis, posuere libero in, interdum odio. Cras facilisis suscipit dictum. Vivamus ullamcorper eu leo pellentesque venenatis.</mutableString>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Crf-3G-AiG" secondAttribute="trailing" constant="10" id="2Sc-h2-NVm"/>
+                    <constraint firstItem="Crf-3G-AiG" firstAttribute="top" secondItem="0uS-Zp-6gb" secondAttribute="bottom" constant="10" id="6DE-WZ-pfr"/>
+                    <constraint firstItem="0uS-Zp-6gb" firstAttribute="leading" secondItem="rUo-3K-fkc" secondAttribute="leading" constant="10" id="SlR-NG-95G"/>
+                    <constraint firstAttribute="bottom" secondItem="Crf-3G-AiG" secondAttribute="bottom" constant="10" id="V5q-4i-Ljo"/>
+                    <constraint firstAttribute="trailing" secondItem="0uS-Zp-6gb" secondAttribute="trailing" constant="10" id="Xgf-IV-Lhk"/>
+                    <constraint firstItem="Crf-3G-AiG" firstAttribute="leading" secondItem="0uS-Zp-6gb" secondAttribute="leading" id="c41-2Q-O4H"/>
+                    <constraint firstItem="0uS-Zp-6gb" firstAttribute="top" secondItem="rUo-3K-fkc" secondAttribute="top" constant="10" id="eTc-oM-qdw"/>
+                    <constraint firstItem="0uS-Zp-6gb" firstAttribute="leading" secondItem="Crf-3G-AiG" secondAttribute="leading" id="lUf-Xf-Xes"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bodyLabel" destination="Crf-3G-AiG" id="1E2-1b-2fY"/>
+                <outlet property="titleLabel" destination="0uS-Zp-6gb" id="77W-QE-Z69"/>
+            </connections>
+            <point key="canvasLocation" x="203.0534351145038" y="82.74647887323944"/>
+        </tableViewCell>
+    </objects>
+</document>
